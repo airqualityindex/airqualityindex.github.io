@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+    <head>
+        <title>closure</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                background-color: rgb(24, 24, 24);
+            }
+            #past{
+               
+                position: responsive;
+                width: 100vw;
+                top: 20vh;
+                right: 45vw;
+                border-radius: 95% 80% 80% 25%;
+                z-index: -90;
+                opacity: 1;
+                cursor: url('magnifier1.png') auto; 
+            
+            }
+            
+           
+           
+          
+           #s0{
+            position: fixed;
+            top: 20px;
+            right: 90px;
+            width: 300px;
+            opacity: 1;
+            z-index: 30;
+            cursor: none; 
+            transition: opacity 2s ease-in-out;
+           }
+           #s0:hover{
+            opacity: 0.01;
+           }
+           #s1{
+            position: fixed;
+            top: 200px;
+            right: 900px;
+            width: 300px;
+            opacity: 1;
+            z-index: 31;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s1:hover{
+            opacity: 0.01;
+           }
+           #s2{
+            position: fixed;
+            top: 600px;
+            right: 1100px;
+            width: 280px;
+            opacity: 1;
+            z-index: 32;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s2:hover{
+            opacity: 0.01;
+           }
+           #s3{
+            position: fixed;
+            top: 0px;
+            right: 1150px;
+            width: 400px;
+            opacity: 1;
+            z-index: 33;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s3:hover{
+            opacity: 0.01;
+           }
+           #s4{
+            position: fixed;
+            top: 650px;
+            right: 700px;
+            width: 120px;
+            opacity: 1;
+            z-index: 34;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s4:hover{
+            opacity: 0.01;
+           }
+           #s5{
+            position: fixed;
+            top: 200px;
+            right: 1800px;
+            width: 240px;
+            opacity: 1;
+            z-index: 35;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s5:hover{
+            opacity: 0.01;
+           }
+           #s6{
+            position: fixed;
+            top: 600px;
+            right: 1360px;
+            width: 200px;
+            opacity: 1;
+            z-index: 36;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s6:hover{
+            opacity: 0.01;
+           }
+           #s7{
+            position: fixed;
+            top: 450px;
+            right: 1200px;
+            width: 120px;
+            opacity: 1;
+            z-index: 37;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s7:hover{
+            opacity: 0.01;
+           }
+           #s8{
+            position: fixed;
+            top: 400px;
+            right: 300px;
+            width: 150px;
+            opacity: 1;
+            z-index: 38;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s8:hover{
+            opacity: 0.01;
+           }
+           #s9{
+            position: fixed;
+            top: 700px;
+            right: 130px;
+            width: 270px;
+            opacity: 1;
+            z-index: 39;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s9:hover{
+            opacity: 0.01;
+           }
+           #s10{
+            position: fixed;
+            top: 700px;
+            right: 300px;
+            width: 270px;
+            opacity: 1;
+            z-index: 40;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s10:hover{
+            opacity: 0.01;
+           }
+           #s11{
+            position: fixed;
+            top: 100px;
+            right: 600px;
+            width: 220px;
+            opacity: 1;
+            z-index: 41;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s11:hover{
+            opacity: 0.01;
+           }
+           #s12{
+            position: fixed;
+            top: 700px;
+            right: 300px;
+            width: 270px;
+            opacity: 1;
+            z-index: 42;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s12:hover{
+            opacity: 0.01;
+           }
+           #s13{
+            position: fixed;
+            top: 650px;
+            right: 820px;
+            width: 270px;
+            opacity: 1;
+            z-index: 43;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s13:hover{
+            opacity: 0.01;
+           }
+           #s14{
+            position: fixed;
+            top: 790px;
+            right: 800px;
+            width: 190px;
+            opacity: 1;
+            z-index: 44;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s14:hover{
+            opacity: 0.01;
+           }
+           #s15{
+            position: fixed;
+            top: 70px;
+            right: 500px;
+            width: 40px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s15:hover{
+            opacity: 0.01;
+           }
+           #s16{
+            position: fixed;
+            top: 300px;
+            right: 550px;
+            width: 100px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s16:hover{
+            opacity: 0.01;
+           }
+           #cursor3{
+            position: fixed;
+            top: 780px;
+            right: 10px;
+            width: 200px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s17{
+            position: fixed;
+            top: 40px;
+            right: 500px;
+            width: 210px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s17:hover{
+            opacity: 0.01;
+           }
+           #s18{
+            position: fixed;
+            top: 7px;
+            right: 800px;
+            width: 200px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #s18:hover{
+            opacity: 0.01;
+           }
+           #p1{
+            position: fixed;
+            top: 550px;
+            right: 500px;
+            width: 190px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #p1:hover{
+            opacity: 0.01;
+           }
+           #p2{
+            position: fixed;
+            top: 90px;
+            right: 230px;
+            width: 80px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #p2:hover{
+            opacity: 0.01;
+           }
+           #p3{
+            position: fixed;
+            top: 40px;
+            right: 500px;
+            width: 100px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #p3:hover{
+            opacity: 0.01;
+           }
+           #p4{
+            position: fixed;
+            top: 550px;
+            right: 100px;
+            width: 100px;
+            opacity: 1;
+            z-index: 45;
+            cursor: none; 
+            transition: opacity 3s ease-in-out;
+           }
+           #p4:hover{
+            opacity: 0.01;
+           }
+           
+          
+            
+            
+        </style>
+    </head>
+    <body>
+        <img class="scan" id="s0" src="past/air.png">
+        <img class="scan" id="s1" src="past/air2.png">
+        <img class="scan" id="s2" src="past/back.png">
+        <img class="scan" id="s3" src="past/bam.png">
+        <img class="scan" id="s4" src="past/bh.png">
+        <img class="scan" id="s5" src="past/candy.png">
+        <img class="scan" id="s6" src="past/cov.png">
+        <img class="scan" id="s7" src="past/ewr.png">
+        <img class="scan" id="s8" src="past/forum.png">
+        <img class="scan" id="s9" src="past/hotdog.png">
+        <img class="scan" id="s10" src="past/id.png">
+        <img class="scan" id="s11" src="past/ifc.png">
+        <img class="scan" id="s12" src="past/mail.png">
+        <img class="scan" id="s13" src="past/metro.png">
+        <img class="scan" id="s14" src="past/metrog.png">
+        <img class="scan" id="s15" src="past/mom.png">
+        <img class="scan" id="s16" src="past/rec.png">
+        <img class="scan" id="s17" src="past/well.png">
+        <img class="scan" id="s18" src="past/yel.png">
+        <img class="pic" id="p1" src="past/p1.jpg">
+        <img class="pic" id="p2" src="past/p2.jpg">
+        <img class="pic" id="p3" src="past/p3.jpg">
+        <img class="pic" id="p4" src="past/p4.jpg">
+        
+        <img class="icon" id="cursor3" src="cursor3.png">
+        <video loop controls autoplay muted playsinline style="pointer-events: none;" id="past" src="past.mp4"
+        type="video/mp4"></video>
+        <audio id="day" src="day.m4a" loop="loop"></audio>
+        
+
+        <script>
+        window.onload = function() {
+    document.getElementById("day").play();
+        }
+        
+        document.getElementById("cursor3").onclick = function () {
+            window.open('','_self').close()
+          
+      };
+        
+        </script>
+    </body>
+</html>
