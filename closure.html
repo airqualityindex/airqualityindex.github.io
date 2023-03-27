@@ -365,7 +365,7 @@
         <img class="pic" id="p3" src="past/p3.jpg">
         <img class="pic" id="p4" src="past/p4.jpg">
         
-        <img class="icon" id="cursor3" src="cursor3.png">
+        <a href="index.html"><img class="icon" id="cursor3" src="cursor3.png"></a>
         <video loop controls autoplay muted playsinline style="pointer-events: none;" id="past" src="past.mp4"
         type="video/mp4"></video>
         <audio id="day" src="day.m4a" loop="loop"></audio>
@@ -376,12 +376,13 @@
         window.onload = function() {
     document.getElementById("day").play();
         }
-        // @grant        window.close
-        document.getElementById("cursor3").onclick = function () {
-           window.close();
+    //     // @grant        window.close
+    //     document.getElementById("cursor3").onclick = function () {
+    //        window.close();
           
-      };
-        
+    //   };
+    var audio = document.getElementById("day");
+        audio.volume = 0.7;
         </script>
     </body>
 </html>
